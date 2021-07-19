@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Intent</title>
+    <link rel="stylesheet" href="toDoList2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <header class="logo">
+                <!-- <a href="balancedDay.png"></a> -->
+                <!-- <img class="headline" src="balancedDay.png" alt="logo"> -->
+                <img class="headline" src="setIntentBool.png" alt="logo">
+                <!-- <img class="headline" src="toDoList.png" alt="logo"> -->
+                <div class="quoteButtonDiv">
+                    <button name="health" type="button" class="quoteButton health" onclick="insert(this)">Health</button>
+                    <button name="learning" type="button" class="quoteButton learning" onclick="insert(this)">Learning</button>
+                    <button name="relations" type="button" class="quoteButton relations" onclick="insert(this)">Relations</button>
+                    <button name="sport" type="button" class="quoteButton sport" onclick="insert(this)">Sport</button>
+                    <button name="success" type="button" class="quoteButton success" onclick="insert(this)">Success</button>
+                    <button name="work" type="button" class="quoteButton work" onclick="insert(this)">Work</button>
+                </div>
+            </header>
+            <div class="main">
+                <form>
+                    <input type="text" placeholder="New Intent">
+                    <button type="submit"><i class="fas fa-plus-square" id="plus"></i></button>
+                </form>
+                <div class="toDoList">
+                    <ul>
+
+                    </ul>
+                    <a class="clearAll" id="clearAll">Regret Your Intents? start fresh!</a>
+                </div>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div class="imgContainer"> 
+                <img src="general11.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src="general4.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src="general5.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src="general2.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src= "general3.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src="general6.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src= "general7.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src="general8.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src="general9.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src="general10.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src= "general1.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+                <img src="general12.jpg" class="img" onclick="enlargeImg(this)" ondblclick="remove(this)">
+               
+            </div>
+        </div>
+    </div>
+
+
+    <script src="toDoList2.js"></script>
+</body>
+</html>

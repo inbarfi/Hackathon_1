@@ -1,0 +1,253 @@
+/* html {
+    height: 100vh;
+    min-width: 600px;
+    /* background-repeat: no-repeat; 
+    background-size: auto; 
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-width: 600px;
+    background-repeat: no-repeat;
+    background-size: auto; 
+    min-height: 100vh;
+    /* display: grid; */
+    background-color: #1f1c1c;
+}
+
+.container {
+    /* width: 100vw;  */
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    margin: 0;
+    font-family: 'Ralaway', sans-serif; /*didnt change*/
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.rightDiv {
+    /* border: 3px solid; */
+    width: 60%;
+    float: right;
+    /* width: 1600px; */
+    /* background-color: rgb(140, 184, 178); */
+    /* display: flex; */
+    /* flex-flow: row; */
+    /* flex-direction: row; */
+    padding: 10px;
+    /* margin-left: 100px; */
+    gap: 7px;
+    /* display: grid; */
+}
+
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* .imgContainer {
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    width: 70%;
+    width: auto; 
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+} */
+
+/* Resize images */
+/* .imgContainer img {
+    /* width: 100%; 
+    /* height: auto; 
+    border-radius: 10px;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 200px;
+    height: 120px;
+    /* display: flex;
+    flex-direction: column; 
+    gap: 20px;
+} */
+
+
+.img {
+    width: 230px;
+    height: 400px;
+    padding: 10px;
+    margin: 2px;
+    /* border: 3px solid rgb(255, 255, 255); */
+    border-radius: 20px;
+}
+
+
+.navbar {
+    width: 40%;
+    /* width: 500px; */
+    height: 1000px;
+    float: left;
+    margin: 0;
+    position: sticky;
+    position: -webkit-sticky; /* for Safari users */
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 10px;
+    /* box-shadow: 2px 2px rgb(207, 103, 207, 0.5), 1px 1px rgb(151, 153, 12); */
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+   
+}
+
+.logo {
+    /* margin: auto; */
+    max-width: 200px;
+    /* padding: 1.5rem 0; */
+    margin-left: 15px;
+    /* align-items: right; */
+    background-color: #000000;
+}
+
+.headline {
+    width: 250px;
+    padding: 1.5rem 0;
+    /* padding: 0; */
+    margin-left: 150px;
+    margin-top: 15px;
+    /* background-color: #cb6ce6; */
+    /* margin: 5px; */
+    /* align-content: center; */
+    /* border: 6px solid rgb(238, 241, 44); */
+    /* float: left; */
+}
+
+.quoteButtonDiv {
+    display: flex;
+    margin: 0;
+    
+}
+
+.quoteButton {
+        background-color:#1f1c1c;
+        border: none;
+        color: rgb(203,108,230);
+        padding: 14px;
+        margin: 5px;
+        margin-left: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 17px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quoteButton:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.main {
+    padding: 20px;
+    height: 1000px ;
+}
+
+
+form {
+    /* background-color: #ffffff;  */
+    /* background-color: rgb(238, 241, 44); */
+    /* padding: 5px; */
+    border-radius: 5px;
+    display: flex;
+}
+
+
+input[type="text"] {
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Relaway', sans-serif;
+    color: #595959;
+    flex-grow: 1;
+    margin-left: 4px;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    outline: 0;
+    border: none;
+    color: #595959;
+    transition: all 0.15s;
+}
+
+input, button:hover {
+    color:rgb(203,108,230);
+}
+
+.toDoList {
+    /* background-color: #ffffff; */
+    background-color:  #1f1c1c;
+    /* border: 3px solid rgb(203,108,230); */
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    height: 100%;
+}
+
+ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    color: rgb(203,108,230);
+}
+
+i {
+    pointer-events: none; /*preventing the click event on the icon, so we get the click on the button */
+}
+
+.todo-item {
+    flex-grow: 1;
+}
+
+.clearAll {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.clearAll:hover {
+    color: rgb(203,108,230);
+}
+
+.todo-list-item {
+    transition: all 0.3s ease-out;
+}
+
+.todo-list-item-fall {
+    transform: translateY(12rem) rotateZ(10deg);
+    opacity: 0;
+}
+
+.green {
+    color: greenyellow;
+}
+
